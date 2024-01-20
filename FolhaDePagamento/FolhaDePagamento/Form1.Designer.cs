@@ -29,163 +29,165 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tituloLabel1 = new System.Windows.Forms.Label();
-            this.usuarioLabel1 = new System.Windows.Forms.Label();
-            this.textBoxEmail1 = new System.Windows.Forms.TextBox();
-            this.esqueciSenhaLinkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBoxSenha1 = new System.Windows.Forms.TextBox();
-            this.senhaLabel1 = new System.Windows.Forms.Label();
-            this.loginButton1 = new System.Windows.Forms.Button();
-            this.fecharLinkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.SuspendLayout();
-            // 
-            // tituloLabel1
-            // 
-            this.tituloLabel1.AutoSize = true;
-            this.tituloLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.tituloLabel1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tituloLabel1.ForeColor = System.Drawing.Color.Black;
-            this.tituloLabel1.Location = new System.Drawing.Point(160, 141);
-            this.tituloLabel1.Name = "tituloLabel1";
-            this.tituloLabel1.Size = new System.Drawing.Size(291, 36);
-            this.tituloLabel1.TabIndex = 0;
-            this.tituloLabel1.Text = "Seja Bem-Vindo(a)!";
-            // 
-            // usuarioLabel1
-            // 
-            this.usuarioLabel1.AutoSize = true;
-            this.usuarioLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.usuarioLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.usuarioLabel1.ForeColor = System.Drawing.Color.Black;
-            this.usuarioLabel1.Location = new System.Drawing.Point(119, 241);
-            this.usuarioLabel1.Name = "usuarioLabel1";
-            this.usuarioLabel1.Size = new System.Drawing.Size(76, 24);
-            this.usuarioLabel1.TabIndex = 2;
-            this.usuarioLabel1.Text = "E-mail:";
-            // 
-            // textBoxEmail1
-            // 
-            this.textBoxEmail1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxEmail1.Location = new System.Drawing.Point(119, 271);
-            this.textBoxEmail1.Multiline = true;
-            this.textBoxEmail1.Name = "textBoxEmail1";
-            this.textBoxEmail1.Size = new System.Drawing.Size(359, 28);
-            this.textBoxEmail1.TabIndex = 3;
-            // 
-            // esqueciSenhaLinkLabel1
-            // 
-            this.esqueciSenhaLinkLabel1.AutoSize = true;
-            this.esqueciSenhaLinkLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.esqueciSenhaLinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(97)))), ((int)(((byte)(189)))));
-            this.esqueciSenhaLinkLabel1.Location = new System.Drawing.Point(119, 403);
-            this.esqueciSenhaLinkLabel1.Name = "esqueciSenhaLinkLabel1";
-            this.esqueciSenhaLinkLabel1.Size = new System.Drawing.Size(135, 21);
-            this.esqueciSenhaLinkLabel1.TabIndex = 6;
-            this.esqueciSenhaLinkLabel1.TabStop = true;
-            this.esqueciSenhaLinkLabel1.Text = "Esqueci a senha";
-            this.esqueciSenhaLinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.esqueciSenhaLinkLabel1_LinkClicked);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(330, 402);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(148, 25);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "Mostrar senha";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // textBoxSenha1
-            // 
-            this.textBoxSenha1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxSenha1.Location = new System.Drawing.Point(119, 368);
-            this.textBoxSenha1.Multiline = true;
-            this.textBoxSenha1.Name = "textBoxSenha1";
-            this.textBoxSenha1.PasswordChar = '*';
-            this.textBoxSenha1.Size = new System.Drawing.Size(359, 28);
-            this.textBoxSenha1.TabIndex = 9;
-            // 
-            // senhaLabel1
-            // 
-            this.senhaLabel1.AutoSize = true;
-            this.senhaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.senhaLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.senhaLabel1.ForeColor = System.Drawing.Color.Black;
-            this.senhaLabel1.Location = new System.Drawing.Point(119, 338);
-            this.senhaLabel1.Name = "senhaLabel1";
-            this.senhaLabel1.Size = new System.Drawing.Size(79, 24);
-            this.senhaLabel1.TabIndex = 8;
-            this.senhaLabel1.Text = "Senha:";
-            // 
-            // loginButton1
-            // 
-            this.loginButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(97)))), ((int)(((byte)(189)))));
-            this.loginButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton1.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.loginButton1.ForeColor = System.Drawing.Color.White;
-            this.loginButton1.Location = new System.Drawing.Point(197, 492);
-            this.loginButton1.Name = "loginButton1";
-            this.loginButton1.Size = new System.Drawing.Size(193, 47);
-            this.loginButton1.TabIndex = 10;
-            this.loginButton1.Text = "Entrar";
-            this.loginButton1.UseVisualStyleBackColor = false;
-            this.loginButton1.Click += new System.EventHandler(this.loginButton1_Click);
+            fecharLinkLabel1 = new LinkLabel();
+            loginButton1 = new Button();
+            tituloLabel1 = new Label();
+            checkBox1 = new CheckBox();
+            esqueciSenhaLinkLabel1 = new LinkLabel();
+            textBoxSenha1 = new TextBox();
+            senhaLabel1 = new Label();
+            textBoxEmail1 = new TextBox();
+            usuarioLabel1 = new Label();
+            SuspendLayout();
             // 
             // fecharLinkLabel1
             // 
-            this.fecharLinkLabel1.AutoSize = true;
-            this.fecharLinkLabel1.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fecharLinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(97)))), ((int)(((byte)(189)))));
-            this.fecharLinkLabel1.Location = new System.Drawing.Point(249, 559);
-            this.fecharLinkLabel1.Name = "fecharLinkLabel1";
-            this.fecharLinkLabel1.Size = new System.Drawing.Size(90, 27);
-            this.fecharLinkLabel1.TabIndex = 11;
-            this.fecharLinkLabel1.TabStop = true;
-            this.fecharLinkLabel1.Text = "Fechar";
-            this.fecharLinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.fecharLinkLabel1_LinkClicked);
+            fecharLinkLabel1.AutoSize = true;
+            fecharLinkLabel1.Font = new Font("Century Gothic", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            fecharLinkLabel1.LinkColor = Color.FromArgb(29, 97, 189);
+            fecharLinkLabel1.Location = new Point(249, 559);
+            fecharLinkLabel1.Name = "fecharLinkLabel1";
+            fecharLinkLabel1.Size = new Size(90, 27);
+            fecharLinkLabel1.TabIndex = 11;
+            fecharLinkLabel1.TabStop = true;
+            fecharLinkLabel1.Text = "Fechar";
+            fecharLinkLabel1.LinkClicked += fecharLinkLabel1_LinkClicked;
+            // 
+            // loginButton1
+            // 
+            loginButton1.BackColor = Color.FromArgb(29, 97, 189);
+            loginButton1.Cursor = Cursors.Hand;
+            loginButton1.FlatStyle = FlatStyle.Flat;
+            loginButton1.Font = new Font("Century Gothic", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            loginButton1.ForeColor = Color.White;
+            loginButton1.Location = new Point(197, 492);
+            loginButton1.Name = "loginButton1";
+            loginButton1.Size = new Size(193, 47);
+            loginButton1.TabIndex = 10;
+            loginButton1.Text = "Entrar";
+            loginButton1.UseVisualStyleBackColor = false;
+            loginButton1.Click += loginButton1_Click;
+            // 
+            // tituloLabel1
+            // 
+            tituloLabel1.AutoSize = true;
+            tituloLabel1.BackColor = Color.Transparent;
+            tituloLabel1.Font = new Font("Century Gothic", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            tituloLabel1.ForeColor = Color.Black;
+            tituloLabel1.Location = new Point(160, 141);
+            tituloLabel1.Name = "tituloLabel1";
+            tituloLabel1.Size = new Size(291, 36);
+            tituloLabel1.TabIndex = 0;
+            tituloLabel1.Text = "Seja Bem-Vindo(a)!";
+            tituloLabel1.Click += tituloLabel1_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.BackColor = Color.Transparent;
+            checkBox1.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            checkBox1.ForeColor = Color.Black;
+            checkBox1.Location = new Point(330, 402);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(148, 25);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "Mostrar senha";
+            checkBox1.UseVisualStyleBackColor = false;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // esqueciSenhaLinkLabel1
+            // 
+            esqueciSenhaLinkLabel1.AutoSize = true;
+            esqueciSenhaLinkLabel1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            esqueciSenhaLinkLabel1.LinkColor = Color.FromArgb(29, 97, 189);
+            esqueciSenhaLinkLabel1.Location = new Point(119, 403);
+            esqueciSenhaLinkLabel1.Name = "esqueciSenhaLinkLabel1";
+            esqueciSenhaLinkLabel1.Size = new Size(135, 21);
+            esqueciSenhaLinkLabel1.TabIndex = 6;
+            esqueciSenhaLinkLabel1.TabStop = true;
+            esqueciSenhaLinkLabel1.Text = "Esqueci a senha";
+            esqueciSenhaLinkLabel1.LinkClicked += esqueciSenhaLinkLabel1_LinkClicked;
+            // 
+            // textBoxSenha1
+            // 
+            textBoxSenha1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSenha1.Location = new Point(119, 368);
+            textBoxSenha1.Multiline = true;
+            textBoxSenha1.Name = "textBoxSenha1";
+            textBoxSenha1.PasswordChar = '*';
+            textBoxSenha1.Size = new Size(359, 28);
+            textBoxSenha1.TabIndex = 9;
+            // 
+            // senhaLabel1
+            // 
+            senhaLabel1.AutoSize = true;
+            senhaLabel1.BackColor = Color.Transparent;
+            senhaLabel1.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            senhaLabel1.ForeColor = Color.Black;
+            senhaLabel1.Location = new Point(119, 338);
+            senhaLabel1.Name = "senhaLabel1";
+            senhaLabel1.Size = new Size(79, 24);
+            senhaLabel1.TabIndex = 8;
+            senhaLabel1.Text = "Senha:";
+            // 
+            // textBoxEmail1
+            // 
+            textBoxEmail1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxEmail1.Location = new Point(119, 271);
+            textBoxEmail1.Multiline = true;
+            textBoxEmail1.Name = "textBoxEmail1";
+            textBoxEmail1.Size = new Size(359, 28);
+            textBoxEmail1.TabIndex = 3;
+            textBoxEmail1.TextChanged += textBoxEmail1_TextChanged;
+            // 
+            // usuarioLabel1
+            // 
+            usuarioLabel1.AutoSize = true;
+            usuarioLabel1.BackColor = Color.Transparent;
+            usuarioLabel1.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            usuarioLabel1.ForeColor = Color.Black;
+            usuarioLabel1.Location = new Point(119, 241);
+            usuarioLabel1.Name = "usuarioLabel1";
+            usuarioLabel1.Size = new Size(76, 24);
+            usuarioLabel1.TabIndex = 2;
+            usuarioLabel1.Text = "E-mail:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(598, 674);
-            this.Controls.Add(this.fecharLinkLabel1);
-            this.Controls.Add(this.loginButton1);
-            this.Controls.Add(this.textBoxSenha1);
-            this.Controls.Add(this.senhaLabel1);
-            this.Controls.Add(this.esqueciSenhaLinkLabel1);
-            this.Controls.Add(this.textBoxEmail1);
-            this.Controls.Add(this.usuarioLabel1);
-            this.Controls.Add(this.tituloLabel1);
-            this.Controls.Add(this.checkBox1);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(598, 674);
+            Controls.Add(fecharLinkLabel1);
+            Controls.Add(loginButton1);
+            Controls.Add(textBoxSenha1);
+            Controls.Add(senhaLabel1);
+            Controls.Add(esqueciSenhaLinkLabel1);
+            Controls.Add(textBoxEmail1);
+            Controls.Add(usuarioLabel1);
+            Controls.Add(tituloLabel1);
+            Controls.Add(checkBox1);
+            Cursor = Cursors.Default;
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Login";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
+        private LinkLabel fecharLinkLabel1;
+        private Button loginButton1;
         private Label tituloLabel1;
-        private Label usuarioLabel1;
-        private TextBox textBoxEmail1;
-        private LinkLabel esqueciSenhaLinkLabel1;
         private CheckBox checkBox1;
+        private LinkLabel esqueciSenhaLinkLabel1;
         private TextBox textBoxSenha1;
         private Label senhaLabel1;
-        private Button loginButton1;
-        private LinkLabel fecharLinkLabel1;
+        private TextBox textBoxEmail1;
+        private Label usuarioLabel1;
     }
 }

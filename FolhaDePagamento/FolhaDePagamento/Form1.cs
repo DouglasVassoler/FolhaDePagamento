@@ -34,25 +34,38 @@ namespace FolhaDePagamento
         private void loginButton1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=DESKTOP-920LSVC;Initial Catalog=BD_PIM;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-3D2GOF3\SQLEXPRESS; Initial catalog= DB_PIM;" + "Integrated Security = true";
+            con.Open();
+
             SqlCommand cdm = new SqlCommand();
             cdm.Connection = con;
-            con.Open();
+
             string entrar = "select * from TB_Usuario where email_user = '" + textBoxEmail1.Text + "' and senha_user = '" + textBoxSenha1.Text + "'";
+
             cdm = new SqlCommand(entrar, con);
             SqlDataReader dr = cdm.ExecuteReader();
             if (dr.Read() == true)
             {
-                new Form3().Show();
+                new Form5().Show();
                 this.Hide();
+                con.Close();
             }
             else
             {
                 MessageBox.Show("Usuário ou senha inválida", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxEmail1.Text = "";
                 textBoxSenha1.Text = "";
                 textBoxEmail1.Focus();
             }
+        }
+
+        private void tituloLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEmail1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
